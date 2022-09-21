@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'GyeonggiTitleM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    font-family: 'GyeonggiTitleM';
+}
+body {
+    background: #b2ff35;
+    background: linear-gradient(90deg, #cfff83 0%, #fff781 100%);
+    
+}
+.center {
+    margin: 0 auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    width: 360px;
+    height: 600px;
+}
+.logo {
+    margin: 20px auto;
+    width: 40%;
+}
+.box {
+    width: 220px;
+    height: 20px;
+    padding: 12px;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    border: 0.1px solid #ddd;
+}
+.btn {
+    background-color: #66ffeb;
+    color: #070c5c;
+    width: 244px;
+    padding: 12px;
+    border: 0;
+    margin-top: 15px;
+}
+.register {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 220px;
+    margin-top: 200px;
+    color: #006d0f;
+    font-size: 13px;
+}
+.shadow {
+    filter: drop-shadow(0 3px 3px #5d7c3aa0);
+}
+.logotext {
+    color: #108a00;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
