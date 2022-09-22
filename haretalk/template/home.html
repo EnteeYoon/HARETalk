@@ -1,67 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HARETalk</title>
-    <link rel="stylesheet" href="/css/home.css"/>
+    <link rel="stylesheet" href="/css/home.css" />
     <style>
-        #aside {
-            position: sticky;
-            top: 0;
-        }
         .sidebar {
+            position: sticky;
+            top: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             width: 54px;
             height: 100vh;
-            background-color: #eee;
+            background-color: #f1f1f1;
         }
         .toolbar {
-            float: left;
-            background-color: #efefef;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: calc(100vw - 65px);
+            color: #7a7a7a;
+        }
+        .flex {
+            display: flex;
+            flex-direction: column;
         }
         .list {
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #ddd;
+            color: #7a7a7a;
             width: 30px;
             height: 30px;
             padding: 12px;
-            margin-bottom: 5px;
             text-align: center;
         }
-        .list:hover {
+
+        .list .logo {
+            max-width: 150%;
+            width: auto !important;
+            height: auto;
+        }
+
+        .list:active {
             color: #108a00;
         }
+
         .container {
             display: flex;
+            width: 100vw;
         }
+
+        .container .column {
+            flex-direction: column;
+        }
+
+        .container .row {
+            flex-direction: row;
+        }
+
+        .container .main {
+            flex-direction: column;
+        }
+
+        .profilebox {
+            width: calc(100vw - 55px);
+            height: 100px;
+            margin-bottom: 10px;
+            background-color: #fdfdfd;
+            border: 0.1px solid #eee;
+        }
+
+        .profilebox:hover {
+            color: #99d100;
+            background-color: #f8fff1;
+        }
+
         .profile {
+            padding: 10px;
+            font-size: 13px;
+            color: #7d7d7d;
+        }
+        .content {
             display: flex;
-            width: 400px;
-            height: 400px;
-            background-color: #f5f5f5;
+            align-items: center;
+            /* justify-content: space-between; */
+            padding: 0 12px;
+        }
+        .img {
+            width: 53px;
+            height: 53px;
+            object-fit: cover;
+            background-color: #7a7a7a;
+            border-radius: 40%;
+        }
+        .name {
+            font-size: 20px;
+            padding: 6px 12px;
+            color: #000;
+        }
+        .status {
+            font-size: 14px;
+            padding: 0 12px;
+            color: #7d7d7d;
+        }
+        .content .friendlist {
+            padding: none;
+        }
+        .friendlist {
+            width: calc(100vw - 55px);
+            height: auto;
+            padding: 12px 0;
+            background-color: #fdfdfd;
+            border: 0.1px solid #eee;
+        }
+
+        .friendlist:hover {
+            background-color: #f3f3f3;
         }
     </style>
 </head>
+
 <body>
-    <nav class="sidebar">
-        <ul class="list">
-            <img src="/img/icon.png" class="list"/>
-        </ul>
-        <ul class="list">
-            홈
-        </ul>
-        <ul class="list">
-            타임라인
-        </ul>
-        <ul class="list">
-            검색
-        </ul>
-        <ul class="list">
-            설정
-        </ul>
-    </nav>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="flex">
+                <ul class="list">
+                    <img src="/img/icon.png" class="list logo" />
+                </ul>
+                <ul class="list">홈</ul>
+                <ul class="list">챗 목록</ul>
+                <ul class="list">타임라인</ul>
+            </div>
+            <div class="flex">
+                <ul class="list">알림</ul>
+                <ul class="list">설정</ul>
+            </div>
+        </nav>
+        <div class="main container">
+            <div class="toolbar">
+                <div class="search list">검색</div>
+                <div class="addfriend list">친구추가</div>
+            </div>
+            <div class="profilebox">
+                <div class="profile">마이프로필</div>
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">블루 아카이브</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friendlist">
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">몰?루</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friendlist">
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">몰?루</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friendlist">
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">몰?루</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friendlist">
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">몰?루</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friendlist">
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">몰?루</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friendlist">
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">몰?루</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friendlist">
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">몰?루</div>
+                    </div>
+                </div>
+            </div>
+            <div class="friendlist">
+                <div class="content">
+                    <img src="/img/profile.jpg" class="img" />
+                    <div class="">
+                        <div class="name">아루</div>
+                        <div class="status">몰?루</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- </div><a href="template/login.html">로그아웃</a></div> -->
 </body>
+
 </html>
