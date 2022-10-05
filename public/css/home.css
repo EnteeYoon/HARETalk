@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'GyeonggiTitleM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiTitleM.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    font-family: 'GyeonggiTitleM';
+}
+.sidebar {
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 54px;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: calc(100vw - 65px);
+    color: #7a7a7a;
+    border-bottom: 0.1px solid #eee;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #7a7a7a;
+    width: 30px;
+    height: 30px;
+    padding: 12px;
+    text-align: center;
+}
+
+.list .logo {
+    max-width: 150%;
+    width: auto !important;
+    height: auto;
+}
+
+.list:active {
+    color: #108a00;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+}
+
+.container .column {
+    flex-direction: column;
+}
+
+.container .row {
+    flex-direction: row;
+}
+
+.container .main {
+    flex-direction: column;
+}
+
+.profilebox {
+    width: calc(100vw - 55px);
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: #fdfdfd;
+    
+}
+
+.profilebox:hover {
+    color: #99d100;
+    background-color: #f8fff1;
+}
+
+.profile {
+    padding: 10px;
+    font-size: 13px;
+    color: #7d7d7d;
+}
+.content {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0 12px;
+}
+.img {
+    width: 53px;
+    height: 53px;
+    object-fit: cover;
+    background-color: #7a7a7a;
+    border-radius: 40%;
+}
+.name {
+    font-size: 20px;
+    padding: 6px 12px;
+    color: #000;
+}
+.status {
+    font-size: 14px;
+    padding: 0 12px;
+    color: #7d7d7d;
+}
+.content .friendlist {
+    padding: none;
+}
+.friendlist {
+    width: calc(100vw - 55px);
+    height: auto;
+    padding: 12px 0;
+    background-color: #fdfdfd;
+}
+.friendlist:nth-child {
+    border-top: none;
+}
+.friendlist:hover {
+    background-color: #f3f3f3;
+}
+.folder {
+    color: #444;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
